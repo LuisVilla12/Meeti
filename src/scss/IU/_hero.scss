@@ -1,0 +1,21 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.hero {
+    background-image: url(../img/hero.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    &__contenido {
+        margin: 0 auto;
+        max-width: 60rem;
+        text-align: center;
+        padding: 10rem 0;
+    }
+    &__titulo {
+        color: v.$blanco;
+        line-height: 1.4;
+    }
+    &__boton {
+        @include m.boton(v.$terciario, v.$blanco);
+    }
+}

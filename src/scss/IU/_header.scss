@@ -1,7 +1,7 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 .header {
-    margin-top: 2rem;
+    margin: 2.5rem 0;
     &__contenido {
         display: flex;
         justify-content: space-between;
