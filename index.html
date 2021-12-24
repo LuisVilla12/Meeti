@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeti</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches" rel="stylesheet">
+    <!-- Preload -->
+    <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
-<body>
 
-    
+<body>
+    <header class="header contenedor">
+        <div class="header__contenido">
+            <div class="header__logo">
+                <picture>
+                    <source srcset="build/img/logo.avif" type="image/avif">
+                    <source srcset="build/img/logo.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/logo.png" alt="logo">
+                </picture>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav__enlace activo">Crear grupo</a>
+                <a href="#" class="nav__enlace">Iniciar sección</a>
+                <a href="#" class="nav__enlace">Registrarse</a>
+            </nav>
+        </div>
+    </header>
+
 </body>
+
 </html>
