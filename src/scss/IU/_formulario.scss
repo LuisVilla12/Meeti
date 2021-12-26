@@ -1,0 +1,30 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.formulario {
+    padding: 4rem 0;
+    border: none;
+    background-color: v.$grisClaro;
+    &__titulo {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: v.$gris;
+    }
+    &__contenido {
+        @include m.grid(1, 1rem);
+        @include m.telefono {
+            @include m.grid(2, 1rem);
+        }
+        @include m.tablet {
+            @include m.grid(4, 1rem);
+        }
+    }
+    &__input {
+        padding: 1rem;
+        border: 1px solid v.$gris;
+    }
+    &__boton {
+        @include m.boton(v.$primario, v.$blanco);
+        padding: 1rem;
+        margin-top: 0;
+    }
+}
